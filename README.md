@@ -25,10 +25,8 @@ Este repositório contém o projeto que cumpre as especificações do desafio.
 
 ## Como implementar
 
-Selecione a pasta do projeto através do terminal e insira os seguintes comandos:
+Primeiramente importe o arquivo com o banco de dados 'database.sql'. Após isso, selecione a pasta do projeto através do terminal e insira os seguintes comandos:
 
 * yarn
-
-* importe o banco de dados 'script.sql'
 
 * yarn dev
