@@ -1,0 +1,15 @@
+{
+    "type": "mysql",
+    "port": 3306,
+    "host": "localhost",
+    "username": "root",
+    "password": "",
+    "database": "teste_receitas_rg_sistemas",
+    "entities": [
+        "src/modules/**/entities/*.ts"
+    ],
+    "migrations": ["./src/database/migrations/*Token.ts"],
+    "cli": {
+        "migrationsDir": "./src/database/migrations"
+    }
+}
