@@ -25,7 +25,7 @@ Este repositório contém o projeto que cumpre as especificações do desafio.
 
 ## Como implementar
 
-Primeiramente importe o arquivo com o banco de dados 'database.sql'. Após isso, selecione a pasta do projeto através do terminal e insira os seguintes comandos:
+Primeiramente importe o arquivo com o banco de dados `database.sql` (é importante que esteja com o serviço mysql ativado) e verifique o login, senha e porta do serviço no arquivo `ormconfig.json` (por padrão estão como `root`, vazio  e `3306` respectivamente). Após isso, selecione a pasta do projeto através do terminal e insira os seguintes comandos:
 
 * yarn
 
