@@ -2,6 +2,7 @@ import { Router } from "express";
 import { ensureAutenticated } from "../middlewares/ensureAutenticated";
 import createRecipeController from "../modules/recipes/useCases/createRecipe";
 import deleteRecipeController from "../modules/recipes/useCases/deleteRecipe";
+import listCategoriesController from "../modules/recipes/useCases/listCategories";
 import listUserRecipesController from "../modules/recipes/useCases/listUserRecipes";
 import updateRecipeController from "../modules/recipes/useCases/updateRecipe";
 
@@ -11,6 +12,10 @@ recipesRouts.use(ensureAutenticated);
 
 recipesRouts.get("/", (req, res) => {
     return listUserRecipesController().handle(req, res);
+});
+
+recipesRouts.get("/categories", (req, res) => {
+    return listCategoriesController().handle(req, res);
 });
 
 recipesRouts.post("/", (req, res) => {
